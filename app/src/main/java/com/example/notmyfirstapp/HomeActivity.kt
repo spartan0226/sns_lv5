@@ -23,7 +23,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         val btn_end = findViewById<Button>(R.id.btn_end)
-        var my_id = findViewById<TextView>(R.id.textView6)
+        val my_id = findViewById<TextView>(R.id.textView6)
         val id = intent.getStringExtra("id").toString()
         my_id.text = "아이디 : $id"
 
