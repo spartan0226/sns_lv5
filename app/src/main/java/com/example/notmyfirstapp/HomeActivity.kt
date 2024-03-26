@@ -25,7 +25,7 @@ class HomeActivity : AppCompatActivity() {
         val btn_end = findViewById<Button>(R.id.btn_end)
         val my_id = findViewById<TextView>(R.id.textView6)
         val id = intent.getStringExtra("id").toString()
-        my_id.text = "아이디 : $id"
+        my_id.setText ("아이디 : $id")
 
         val homeImage = findViewById<ImageView>(R.id.imageView3)
         when ((0..4).random()) {
