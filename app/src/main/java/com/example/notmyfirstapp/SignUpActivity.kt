@@ -24,9 +24,9 @@ class SignUpActivity : AppCompatActivity() {
         val my_name = findViewById<EditText>(R.id.et_name)
         val my_id2 = findViewById<EditText>(R.id.et_id2)
         val my_password2 = findViewById<EditText>(R.id.et_password2)
-        val sign_up = findViewById<Button>(R.id.btn_signup2)
+        val sign_up2 = findViewById<Button>(R.id.btn_signup2)
 
-        sign_up.setOnClickListener {
+        sign_up2.setOnClickListener {
             if (my_id2.text.isNullOrBlank() || my_name.text.isNullOrBlank() || my_password2.text.isNullOrBlank()) {
                 Toast.makeText(this, "입력되지 않은 정보가 있습니다.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
