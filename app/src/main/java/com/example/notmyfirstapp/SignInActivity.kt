@@ -61,7 +61,6 @@ class SignInActivity : AppCompatActivity() {
                 if (it.resultCode == RESULT_OK) {
                     val pass_id = it.data?.getStringExtra("pass_id") ?: ""
                     val pass_word = it.data?.getStringExtra("pass_word") ?: ""
-
                     id.setText(pass_id)
                     password.setText(pass_word)
                 }
