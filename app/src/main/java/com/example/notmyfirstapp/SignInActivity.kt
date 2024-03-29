@@ -18,7 +18,6 @@ class SignInActivity : AppCompatActivity() {
     private lateinit var resultLauncher: ActivityResultLauncher<Intent>
     private lateinit var id : EditText
     private lateinit var password : EditText
-    private lateinit var sign_up : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +32,7 @@ class SignInActivity : AppCompatActivity() {
         id = findViewById<EditText>(R.id.et_id)
         password = findViewById<EditText>(R.id.et_password)
         val sign_in = findViewById<Button>(R.id.btn_signin)
-        sign_up = findViewById<Button>(R.id.btn_signup)
+        val sign_up = findViewById<Button>(R.id.btn_signup)
 
         setResult()
 
