@@ -31,11 +31,9 @@ class SignInActivity : AppCompatActivity() {
 
         id = findViewById<EditText>(R.id.et_id)
         password = findViewById<EditText>(R.id.et_password)
-        val sign_in = findViewById<Button>(R.id.btn_signin)
-        val sign_up = findViewById<Button>(R.id.btn_signup)
-
         setResult()
 
+        val sign_in = findViewById<Button>(R.id.btn_signin)
         sign_in.setOnClickListener {
             if (id.text.isNullOrBlank() || password.text.isNullOrBlank()) {
                 Toast.makeText(this, "아이디/비밀번호를 확인해주세요.", Toast.LENGTH_SHORT).show()
@@ -49,6 +47,7 @@ class SignInActivity : AppCompatActivity() {
             }
         }
 
+        val sign_up = findViewById<Button>(R.id.btn_signup)
         sign_up.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
             resultLauncher.launch(intent)
