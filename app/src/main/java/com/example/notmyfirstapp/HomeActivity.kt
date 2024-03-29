@@ -22,20 +22,20 @@ class HomeActivity : AppCompatActivity() {
             insets
         }
 
-        val btn_end = findViewById<Button>(R.id.btn_end)
         val my_id = findViewById<TextView>(R.id.tv_id)
         val id = intent.getStringExtra("id").toString()
-        my_id.setText("아이디 : $id")
+        my_id.text = "아이디 : $id"
 
-        val homeImage = findViewById<ImageView>(R.id.imageView3)
+        val home_image = findViewById<ImageView>(R.id.imageView3)
         when ((0..4).random()) {
-            0 -> homeImage.setImageResource(R.drawable.home1)
-            1 -> homeImage.setImageResource(R.drawable.home2)
-            2 -> homeImage.setImageResource(R.drawable.home3)
-            3 -> homeImage.setImageResource(R.drawable.home4)
-            4 -> homeImage.setImageResource(R.drawable.home5)
+            0 -> home_image.setImageResource(R.drawable.home1)
+            1 -> home_image.setImageResource(R.drawable.home2)
+            2 -> home_image.setImageResource(R.drawable.home3)
+            3 -> home_image.setImageResource(R.drawable.home4)
+            4 -> home_image.setImageResource(R.drawable.home5)
         }
 
+        val btn_end = findViewById<Button>(R.id.btn_end)
         btn_end.setOnClickListener {
             finish()
         }
